@@ -70,28 +70,28 @@ Rscript download_gdrive.R --id <FOLDER_ID> --out <OUTPUT_DIR> --auth <EMAIL>
 
 Given a Drive folder URL like:
 ```
-https://drive.google.com/drive/folders/1ha4k973FQhOvs0GDKY5nzhjIno5InLsK?usp=drive_link
+https://drive.google.com/drive/folders/g6s7lsejmtl14q3lff0vbobiawzp85af?usp=drive_link
 ```
 the folder ID is the string between `/folders/` and the `?`:
 ```
-1ha4k973FQhOvs0GDKY5nzhjIno5InLsK
+g6s7lsejmtl14q3lff0vbobiawzp85af
 ```
 
 ### Examples
 
 Check how many items are in a folder before downloading anything:
 ```bash
-Rscript download_gdrive.R --id 1ha4k973FQhOvs0GDKY5nzhjIno5InLsK --out my_data --auth you@example.com --dry
+Rscript download_gdrive.R --id g6s7lsejmtl14q3lff0vbobiawzp85af --out my_data --auth you@example.com --dry
 ```
 
 Run the full download:
 ```bash
-Rscript download_gdrive.R --id 1ha4k973FQhOvs0GDKY5nzhjIno5InLsK --out my_data --auth you@example.com
+Rscript download_gdrive.R --id g6s7lsejmtl14q3lff0vbobiawzp85af --out my_data --auth you@example.com
 ```
 
 Run it in the background so it survives a dropped SSH connection, logging progress to a file:
 ```bash
-nohup Rscript download_gdrive.R --id 1ha4k973FQhOvs0GDKY5nzhjIno5InLsK --out my_data --auth you@example.com > download_log.txt 2>&1 &
+nohup Rscript download_gdrive.R --id g6s7lsejmtl14q3lff0vbobiawzp85af --out my_data --auth you@example.com > download_log.txt 2>&1 &
 ```
 
 Check progress at any time:
