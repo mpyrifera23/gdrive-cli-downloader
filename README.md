@@ -127,6 +127,3 @@ This script downloads files one at a time through the Drive API, which is inhere
 **Duplicate-named folders**
 If Drive contains two folders with the same name, only the first one (by listing order) is downloaded. This is intentional — better to reliably grab one complete copy than silently skip both, which is `rclone`'s default behavior on name collisions.
 
-## License
-
-MIT (or update as appropriate for your project)
